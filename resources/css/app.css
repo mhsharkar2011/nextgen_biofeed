@@ -1,0 +1,23 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+/* Custom Bootstrap overrides */
+.btn-primary {
+    @apply bg-blue-600 border-blue-600 hover:bg-blue-700 hover:border-blue-700;
+}
+
+.card {
+    @apply border-0 rounded-lg shadow;
+}
+
+.card-header {
+    @apply bg-white border-b-0 text-gray-700 font-semibold;
+}
